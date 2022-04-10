@@ -1,5 +1,4 @@
 ---
-
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
@@ -8,7 +7,7 @@ metadata:
     app: argo-combined-app
 spec:
   minReplicas: 2
-  maxReplicas: 6
+  maxReplicas: 2
   scaleTargetRef:
     apiVersion: argoproj.io/v1alpha1
     kind: Rollout
