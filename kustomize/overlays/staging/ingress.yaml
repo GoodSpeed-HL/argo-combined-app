@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: argo-combined-app
   annotations:
-    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: 'nginx'
     ingress.kubernetes.io/ssl-redirect: 'false'
     nginx.ingress.kubernetes.io/ssl-redirect: 'false'
     ingress.kubernetes.io/rewrite-target: /
@@ -19,4 +19,4 @@ spec:
                 name: argo-combined-app
                 port:
                   number: 80
-      host: staging.argo-combined-app.34.152.51.14.nip.io
+      host: staging.argo-combined-app.34.152.11.119.nip.io
