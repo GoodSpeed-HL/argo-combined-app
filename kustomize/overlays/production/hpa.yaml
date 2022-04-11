@@ -12,10 +12,4 @@ spec:
     apiVersion: argoproj.io/v1alpha1
     kind: Rollout
     name: argo-combined-app
-  metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        target:
-          type: Utilization
-          averageUtilization: 50
+  targetCPUUtilizationPercentage: 30
